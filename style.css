@@ -1,0 +1,153 @@
+body {
+    font-family: 'Archivo', sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+h2, a {
+    font-family: 'Space Mono', monospace;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.logo-container {
+    display: inline-block;
+    text-align: center;
+}
+
+.logo {
+    width: 500px; /* Adjust the width as needed */
+    margin-bottom: 10px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.about, .services, .registration, .contact-section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #AA896A;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.about h2, .services h2, .registration h2, .contact h2 {
+    margin-bottom: 20px;
+}
+/* Booking Form Styles */
+.registration form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.registration input,
+.registration select {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+.registration input[type="submit"] {
+    background-color: #ad7b4d;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.registration input[type="submit"]:hover {
+    background-color: #8c633e;
+}
+
+.registration select {
+    background-color: #fff;
+}
+
+input[type="text"], input[type="date"], input[type="tel"], input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+.navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    display: block;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    background-color: #444;
+    color: #ad7b4d;
+    transition: background-color 0.3s ease;
+}
+
+/* Contact Section Styles */
+.contact-section {
+    background-color: #101010;
+    padding: 40px 20px;
+    color: #fff;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-logo {
+    flex: 0 0 150px;
+    text-align: right;
+    width: 100px;
+}
+
+.contact-logo-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}

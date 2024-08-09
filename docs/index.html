@@ -60,6 +60,7 @@
             </select>
             <h4>Preferred Date</h4>
             <input type="date" name="date" placeholder="Preferred Date" required>
+            <input type="time" name="time" placeholder="Preferred Time" required>
             <input type="tel" name="phone" placeholder="Your Phone Number" required>
             <input type="submit" value="Book Now">
         </form>
@@ -88,10 +89,11 @@
         var name = document.querySelector('input[name="name"]').value;
         var service = document.querySelector('select[name="service"]').value;
         var date = document.querySelector('input[name="date"]').value;
+        var time = document.querySelector('input[name="time"]').value;
         var phone = document.querySelector('input[name="phone"]').value;
 
         // Construct message
-        var message = `New Booking:\n\nName: ${name}\nService: ${service}\nPreferred Date: ${date}\nPhone: ${phone}`;
+        var message = `New Booking:\n\nName: ${name}\nService: ${service}\nPreferred Date: ${date} at ${time}\nPhone: ${phone}`;
 
         // Send message to Telegram bot
         var telegramBotToken = '7302435652:AAHLpU2TwZ_xZ4nfw4-2eNt2rruA1taTiTY'; // Replace with your bot's token
